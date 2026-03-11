@@ -17,28 +17,8 @@ import androidx.core.view.WindowInsetsCompat;
 public class SegundaTela extends AppCompatActivity {
 
 
-    ActivityResultLauncher<Intent> mStartForResult = registerForActivityResult(new ActivityResultContracts.StartActivityForResult(),
-            new ActivityResultCallback<ActivityResult>() {
-                @Override
-                public void onActivityResult(ActivityResult result) {
 
 
-                    Bundle params = result.getData() != null ? result.getData().getExtras() : null;
-
-                    if (params != null) {
-                        String msg = params.getString("msg");
-
-                        if (result.getResultCode() == 1) {
-                            Toast.makeText(getApplicationContext(), "Escolheu sim:" + msg, Toast.LENGTH_LONG).show();
-                        } else if (result.getResultCode() == 2) {
-                            Toast.makeText(getApplicationContext(), "Escolheu não:" + msg, Toast.LENGTH_LONG).show();
-                        } else {
-                            Toast.makeText(getApplicationContext(), "Não definido:" + msg, Toast.LENGTH_LONG).show();
-                        }
-                    }
-                }
-
-            });
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,5 +30,15 @@ public class SegundaTela extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+
+        Pessoa pessoaRecebida = (Pessoa) getIntent().getSerializableExtra("Pessoa");
+
+        if(pessoaRecebida != null){
+
+            String info = "Id " + pessoaRecebida.getId() + "\nNome " + pessoaRecebida.getName() +
+                    "\nIdade " + pessoaRecebida.getAge();
+
+            Toast.makeText(this,info, Toast.LENGTH_LONG).show();
+        }
     }
 }

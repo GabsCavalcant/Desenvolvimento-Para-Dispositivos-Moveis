@@ -1,6 +1,8 @@
 package com.test.desafio_orientadoobjeto;
 
-public class Pessoa{
+import java.io.Serializable;
+
+public class Pessoa implements Serializable {
 
 
     private int id;

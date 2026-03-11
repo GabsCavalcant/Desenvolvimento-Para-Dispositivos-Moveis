@@ -19,7 +19,7 @@ import androidx.core.view.WindowInsetsCompat;
 public class MainActivity extends AppCompatActivity {
 
 
-    private  EditText id;
+    private EditText id;
     private EditText nome;
     private EditText idade;
 
@@ -49,12 +49,13 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onClick(View arg0) {
-                Pessoa novaP = cadastrar(arg0);
 
-                Intent it = new Intent(getApplicationContext(), SegundaTela.class);
-                it.putExtra("pessoa", novaP.toString());
-                setResult(1, it);
-                finish();
+                Pessoa p = cadastrar(arg0);
+
+                Intent intent = new Intent(MainActivity.this, SegundaTela.class);
+                intent.putExtra("Pessoa", p);
+
+                startActivity(intent);
 
             }
         });
@@ -67,7 +68,7 @@ public class MainActivity extends AppCompatActivity {
         Pessoa p = new Pessoa();
 
         p.setId(Integer.parseInt( id.getText().toString()));
-        p.setName(nome.toString());
+        p.setName(nome.getText().toString());
         p.setAge(Integer.parseInt(idade.getText().toString()));
 
         return p;
