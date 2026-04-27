@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PetStore</string>
+    <string name="buscar">Buscar</string>
+    <string name="adicionar_pet">Adicionar Pet</string>
+    <string name="nenhum_pet">Nenhum pet encontrado.\nClique em Buscar para carregar dados do webservice.</string>
+    <string name="pets_salvos">pets salvos no banco local</string>
+</resources>

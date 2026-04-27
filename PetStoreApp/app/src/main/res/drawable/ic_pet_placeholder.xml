@@ -1,0 +1,51 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="72dp"
+    android:height="72dp"
+    android:viewportWidth="72"
+    android:viewportHeight="72">
+
+    <!-- Fundo circular suave -->
+    <path
+        android:fillColor="#E8F4FD"
+        android:pathData="M36,36m-36,0a36,36 0,1 1,72 0a36,36 0,1 1,-72 0"/>
+
+    <!-- Corpo do pet (cachorro/gato simplificado) -->
+    <path
+        android:fillColor="#4A90D9"
+        android:pathData="M24,44 C24,38 28,34 36,34 C44,34 48,38 48,44 L48,52 C48,54 46,56 44,56 L28,56 C26,56 24,54 24,52 Z"/>
+
+    <!-- Cabeça -->
+    <path
+        android:fillColor="#4A90D9"
+        android:pathData="M36,18 m-10,0 a10,10 0 1,0 20,0 a10,10 0 1,0 -20,0"/>
+
+    <!-- Orelha esquerda -->
+    <path
+        android:fillColor="#2C6FAD"
+        android:pathData="M22,22 L26,14 L30,20 Z"/>
+
+    <!-- Orelha direita -->
+    <path
+        android:fillColor="#2C6FAD"
+        android:pathData="M50,22 L46,14 L42,20 Z"/>
+
+    <!-- Olhos -->
+    <path
+        android:fillColor="@android:color/white"
+        android:pathData="M31,20 m-3,0 a3,3 0 1,0 6,0 a3,3 0 1,0 -6,0"/>
+    <path
+        android:fillColor="@android:color/white"
+        android:pathData="M41,20 m-3,0 a3,3 0 1,0 6,0 a3,3 0 1,0 -6,0"/>
+    <path
+        android:fillColor="#1A1A2E"
+        android:pathData="M31,20 m-1.5,0 a1.5,1.5 0 1,0 3,0 a1.5,1.5 0 1,0 -3,0"/>
+    <path
+        android:fillColor="#1A1A2E"
+        android:pathData="M41,20 m-1.5,0 a1.5,1.5 0 1,0 3,0 a1.5,1.5 0 1,0 -3,0"/>
+
+    <!-- Nariz -->
+    <path
+        android:fillColor="#1A1A2E"
+        android:pathData="M34,25 L38,25 L36,27 Z"/>
+
+</vector>
