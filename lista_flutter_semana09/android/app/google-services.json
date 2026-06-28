@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "893349226567",
+    "firebase_url": "https://projeto-android-03-default-rtdb.firebaseio.com",
+    "project_id": "projeto-android-03",
+    "storage_bucket": "projeto-android-03.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:893349226567:android:44231672d8816ded49a962",
+        "android_client_info": {
+          "package_name": "com.example.lista_flutter_semana09"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAwFMGwasgDbRzpNXI5Bc8gmOY6gRDWyZw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
